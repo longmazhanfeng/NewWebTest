@@ -2,13 +2,20 @@ package com.netease.base;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 
+import com.google.common.base.Function;
 import com.thoughtworks.selenium.webdriven.JavascriptLibrary;
 
 public class BrowserTester {
@@ -18,6 +25,7 @@ public class BrowserTester {
 	private ChromeDriverService chromeService;
 	// 每个操作时间间隔
 	private int interval = Integer.parseInt(Settings.stepInterval);
+	private int timeout = Integer.parseInt(Settings.timeout);
 
 	private static boolean chromeServiceOn = false;
 
@@ -123,19 +131,34 @@ public class BrowserTester {
 
 	/**
 	 * 用js来判断页面中是否包含指定元素
+	 * 
 	 * @param text
 	 * @param time
 	 * @return 判断是否含有text的结果
 	 */
 	public boolean isTextPresent(String text, int time) {
 		pause(time);
-		
+
 		JavascriptLibrary js = new JavascriptLibrary();
 		String script = js.getSeleniumScript("isTextPresent.js");
-		Boolean result = (Boolean) ((JavascriptExecutor) remoteWebDriver).executeScript(
-				"return (" + script + ")(arguments[0]);", text);
+		Boolean result = (Boolean) ((JavascriptExecutor) remoteWebDriver)
+				.executeScript("return (" + script + ")(arguments[0]);", text);
 
 		// Handle the null case
 		return Boolean.TRUE == result;
+	}
+
+	public void expectTextExistOrNot(boolean expectExist, final String text,
+			int timeout) {
+		if (expectExist) {
+			Wait<WebDriver> wait = new FluentWait<WebDriver>(remoteWebDriver)
+					.withTimeout(timeout, TimeUnit.MILLISECONDS).pollingEvery(1, TimeUnit.SECONDS)
+					.ignoring(NoSuchElementException.class);
+			WebElement foo = wait.until(new Function<String, int>() {
+				public boolean apply(WebDriver driver) {
+					return driver.findElement(By.id("foo"));
+				}
+			});
+		}
 	}
 }
