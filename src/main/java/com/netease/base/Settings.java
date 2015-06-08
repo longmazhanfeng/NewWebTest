@@ -4,7 +4,9 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 /**
- * Hello world!
+ * 2015.06.08 10：59 
+ * SingleBrowserLocator 可以用来查找本地系统中安装的可用的浏览器
+ * @author hzdonghao
  *
  */
 public class Settings 

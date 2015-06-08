@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9919" started-at="2015-06-04T10:04:31Z" finished-at="2015-06-04T10:04:41Z">
+  <suite name="Default suite" duration-ms="19880" started-at="2015-06-08T05:51:24Z" finished-at="2015-06-08T05:51:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9919" started-at="2015-06-04T10:04:31Z" finished-at="2015-06-04T10:04:41Z">
-      <class name="NewWebTest.OpenUrl">
-        <test-method status="PASS" signature="openUrl()[pri:0, instance:NewWebTest.OpenUrl@35851384]" name="openUrl" duration-ms="9897" started-at="2015-06-04T18:04:31Z" finished-at="2015-06-04T18:04:41Z">
+    <test name="Default test" duration-ms="19880" started-at="2015-06-08T05:51:24Z" finished-at="2015-06-08T05:51:44Z">
+      <class name="NewWebTest.NewSelectWindow">
+        <test-method status="PASS" signature="newSelectWindow()[pri:0, instance:NewWebTest.NewSelectWindow@23223dd8]" name="newSelectWindow" duration-ms="19862" started-at="2015-06-08T13:51:24Z" finished-at="2015-06-08T13:51:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openUrl -->
-      </class> <!-- NewWebTest.OpenUrl -->
+        </test-method> <!-- newSelectWindow -->
+      </class> <!-- NewWebTest.NewSelectWindow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
