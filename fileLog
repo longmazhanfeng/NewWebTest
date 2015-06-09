@@ -1,0 +1,15 @@
+2015-06-09 09:39:51 [main]-[INFO] Using Chrome
+2015-06-09 09:39:51 [main]-[INFO] Started BrowserTester
+2015-06-09 09:40:21 [main]-[INFO] Open Url:http://www.163.com
+2015-06-09 09:56:23 [main]-[INFO] Using Chrome
+2015-06-09 09:56:23 [main]-[INFO] Started BrowserTester
+2015-06-09 09:57:24 [main]-[INFO] Open Url:http://www.163.com
+2015-06-09 10:09:08 [main]-[INFO] Using Chrome
+2015-06-09 10:09:08 [main]-[INFO] Started BrowserTester
+2015-06-09 10:09:25 [main]-[INFO] Open Url:http://www.163.com
+2015-06-09 11:20:32 [main]-[INFO] Using FireFox
+2015-06-09 11:20:32 [main]-[INFO] Started BrowserTester
+2015-06-09 11:20:56 [main]-[INFO] Open Url:http://www.163.com
+2015-06-09 11:23:37 [main]-[INFO] Using FireFox
+2015-06-09 11:23:37 [main]-[INFO] Started BrowserTester
+2015-06-09 11:23:54 [main]-[INFO] Open Url:http://www.163.com

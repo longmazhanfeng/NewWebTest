@@ -1,0 +1,21 @@
+2015-06-08 14:50:48 [main]-[INFO] 设置浏览器类型成功！
+2015-06-08 15:45:57 [main]-[INFO] 设置浏览器类型成功！
+2015-06-08 16:09:55 [main]-[INFO] 设置浏览器类型成功！
+2015-06-08 16:13:37 [main]-[INFO] 设置浏览器类型成功！
+2015-06-08 17:39:23 [main]-[INFO] Using Chrome
+2015-06-08 17:39:23 [main]-[INFO] Started BrowserTester
+2015-06-08 17:39:52 [main]-[INFO] Open Url:http://www.163.com
+2015-06-08 17:39:55 [main]-[INFO] Find the Element at //*[@id="js_changeView"]/div/div[1]/span/a
+2015-06-08 17:39:56 [main]-[INFO] Mouserover //*[@id="js_changeView"]/div/div[1]/span/a
+2015-06-08 17:52:21 [main]-[INFO] Using Chrome
+2015-06-08 17:52:21 [main]-[INFO] Started BrowserTester
+2015-06-08 17:52:58 [main]-[INFO] Open Url:http://www.163.com
+2015-06-08 17:53:01 [main]-[INFO] Find the Element at //*[@id="js_changeView"]/div/div[1]/span/a
+2015-06-08 17:53:02 [main]-[INFO] Mouserover //*[@id="js_changeView"]/div/div[1]/span/a
+2015-06-08 17:56:02 [main]-[INFO] Using Chrome
+2015-06-08 17:56:02 [main]-[INFO] Started BrowserTester
+2015-06-08 17:56:51 [main]-[INFO] Open Url:http://www.163.com
+2015-06-08 17:56:54 [main]-[INFO] Find the Element at //*[@id="js_changeView"]/div/div[1]/span/a
+2015-06-08 17:56:54 [main]-[INFO] Mouserover //*[@id="js_changeView"]/div/div[1]/span/a
+2015-06-08 19:16:45 [main]-[INFO] Using Chrome
+2015-06-08 19:16:45 [main]-[INFO] Started BrowserTester

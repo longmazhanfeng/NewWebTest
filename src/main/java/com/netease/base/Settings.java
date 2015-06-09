@@ -13,11 +13,14 @@ public class Settings
 {
 	public static Properties prop = getProperties();
 
+	// 默认使用Chrome
 	public static int browserCoreType = Integer.parseInt(prop.getProperty("BrowserCoreType", "2"));
 
 	public static String chromeDriverPath = prop.getProperty("ChromeDriverPath", "res/chromedriver.exe");
 
-	public static String ieDriverPath = prop.getProperty("IEDriverPath", "res/iedriver_32.exe");
+	public static String firefoxPath = prop.getProperty("FirefoxPath", "C:\\Program Files\\Firefox.exe");
+	// Windows x64
+	public static String ieDriverPath = prop.getProperty("IEDriverPath", "res/IEDriverServer.exe");
 
 	public static String stepInterval = prop.getProperty("StepInterval", "500");
 
