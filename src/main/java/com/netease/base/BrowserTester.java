@@ -501,7 +501,7 @@ public class BrowserTester {
 					// TODO
 					logger.info("Don't found text: " + text);
 				}
-			} catch (TimeoutException e) {
+			} catch (Exception e) {
 				// TODO: handle exception
 				handleFailure("Failed to find text: " + text);
 
